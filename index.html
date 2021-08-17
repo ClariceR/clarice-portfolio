@@ -3,9 +3,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script defer src="./app/js/script.js"></script>
+
     <title>Clarice</title>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+      <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c">
+
+          <!-- Logo -->
+          <a href="./" class="header__logo">
+            <img src="./images/logo.svg" alt="Clarice" />
+          </a>
+
+          <!-- Hamburger Menu button only visible on mobile -->
+          <a id="menu-btn" href="#" class="header__mobile_menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <!-- Nav menu only visible on Desktop -->
+          <ul class="header__desktop_menu flex flex-ai-bl">
+            <li><a class="menu_item" href="#">Projects</a></li>
+            <li>
+              <a class="menu_item" href="./">About / Contact</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/ClariceR"
+                ><img
+                  class="github-menu"
+                  src="./images/github.svg"
+                  alt="github"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Nav menu only visible on Mobile -->
+        <nav class="mobile-menu-wrapper">
+          <div
+            id="mobile-menu"
+            class="
+              header__mobile_menu
+              flex flex-column flex-jc-c flex-ai-c
+              hide
+            "
+          >
+            <ul class="flex flex-column">
+              <li><a class="menu_item" href="#quote">Portfolio</a></li>
+              <div class="line-menu"></div>
+              <li>
+                <a class="menu_item" href="./"
+                  >About / Contact</a
+                >
+              </li>
+              <div class="line-menu"></div>
+              <li>
+                <a
+                  class="menu_item"
+                  target="_blank"
+                  href="https://github.com/ClariceR"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </header>
 </body>
 </html>

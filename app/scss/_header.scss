@@ -1,0 +1,128 @@
+.header {
+  height: 2.75rem;
+  &__mobile_menu-btn {
+    > span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: $darkBPurple;
+      transition: all 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .menu-toggle {
+    > span:first-child {
+      transform: translateY(8px) rotate(45deg);
+    }
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+    > span:last-child {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  &__mobile_menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30.625rem;
+    margin-top: 1.4375rem;
+    background-color: $darkBPurple;
+
+    ul {
+      width: 80vw;
+    }
+
+    li {
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+      padding: 4rem;
+      text-align: center;
+    }
+
+    li:last-child {
+      padding-bottom: 4rem;
+    }
+
+    a {
+      color: $bYellow;
+    }
+    a:hover {
+      color: $bOrange;
+    }
+  }
+
+  &__desktop_menu {
+    li {
+      letter-spacing: 0.0625rem;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+    .menu_item:hover {
+      padding-top: 0.75rem;
+      background-color: $bYellow;
+      outline: 5px solid $bYellow;
+    }
+    .github-menu {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+    }
+  }
+}
+
+.mobile-menu-wrapper {
+  position: relative;
+}
+
+.line-menu {
+  width: 90%;
+  align-self: center;
+  border-top: 2px solid lightcoral;
+}
+
+.anim-fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+.anim-fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
+// -- Media queries --
+
+// Mobile only (max size 812px)
+@media (max-width: 50.75em) {
+  .header {
+    &__logo {
+      img {
+        width: 9rem;
+      }
+    }
+    &__desktop_menu {
+      display: none;
+    }
+  }
+}
+
+// From tablet size (813px)
+@media (min-width: 50.8125em) {
+  .header {
+    height: 5.625rem;
+    &__mobile_menu-btn {
+      display: none;
+    }
+    &__mobile_menu {
+      display: none;
+    }
+  }
+}
