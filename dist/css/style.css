@@ -92,12 +92,12 @@ a:hover {
 
 @media (min-width: 50.8125em) {
   .container {
-    padding: 3.125rem 6.875rem 3.125rem 6.875rem;
+    padding: 2rem 3rem;
   }
 }
 
 .header {
-  height: 2.75rem;
+  height: 2rem;
 }
 
 .header__mobile_menu-btn > span {
@@ -216,7 +216,7 @@ a:hover {
 
 @media (min-width: 50.8125em) {
   .header {
-    height: 5.625rem;
+    height: 3rem;
   }
   .header__mobile_menu-btn {
     display: none;

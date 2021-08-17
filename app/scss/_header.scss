@@ -1,5 +1,5 @@
 .header {
-  height: 2.75rem;
+  height: 2rem;
   &__mobile_menu-btn {
     > span {
       display: block;
@@ -117,7 +117,7 @@
 // From tablet size (813px)
 @media (min-width: 50.8125em) {
   .header {
-    height: 5.625rem;
+    height: 3rem;
     &__mobile_menu-btn {
       display: none;
     }
