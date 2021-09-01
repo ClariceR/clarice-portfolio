@@ -27,7 +27,7 @@ ul {
 }
 
 a {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 300;
   font-style: italic;
   color: #262335;
@@ -37,6 +37,24 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.title {
+  font-family: 'Roboto Slab', monospace;
+  font-weight: normal;
+}
+
+.body__copy {
+  font-family: 'Roboto', sans-serif;
+  color: #8c8c8c;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .hide {
@@ -224,5 +242,37 @@ a:hover {
   .header__mobile_menu {
     display: none;
   }
+}
+
+.main__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.text-wrapper {
+  width: 30vw;
+  height: 75vh;
+}
+
+.image-wrapper {
+  width: 50vw;
+  height: 75vh;
+  background-color: #F97EFA;
+  background-image: url("../../images/about-nia-desktop.png");
+  background-repeat: no-repeat;
+  background-position-x: 310px;
+  background-position-y: 40px;
+  background-size: 32vw;
+  overflow: hidden;
+}
+
+.image {
+  width: 32vw;
+  -webkit-transform: translate(50px, 120px);
+          transform: translate(50px, 120px);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

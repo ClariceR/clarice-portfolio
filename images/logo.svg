@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="151.701" height="57.348" viewBox="0 0 151.701 57.348">
   <g id="Logo" transform="translate(-61.711 -22.326)">
     <path id="Path_1" data-name="Path 1" d="M3.448,0H151.7l-3.448,57.348H0Z" transform="translate(61.711 22.326)" fill="#262335"/>
-    <text id="Clarice" transform="translate(80 61)" fill="#fcde5d" font-size="32" font-family="OhnoBlazeface-36PointItalic, Ohno Blazeface" font-style="italic"><tspan x="0" y="0">Clarice</tspan></text>
+    <text id="Clarice" transform="translate(80 61)" fill="#fcde5d" font-size="32" font-family="OhnoBlazeface-24PointItalic, Ohno Blazeface" font-style="italic"><tspan x="0" y="0">Clarice</tspan></text>
   </g>
 </svg>

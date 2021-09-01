@@ -25,7 +25,7 @@ ul {
 }
 
 a {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 300;
   font-style: italic;
   color: $darkBPurple;
@@ -35,6 +35,24 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.title {
+  font-family: 'Roboto Slab', monospace;
+  font-weight: normal;
+}
+
+.body__copy {
+  font-family: 'Roboto', sans-serif;
+  color: $bCopyGray;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 // Hide

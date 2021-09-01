@@ -1,0 +1,29 @@
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-wrapper {
+    width: 30vw;
+    height: 75vh;
+  
+}
+
+.image-wrapper {
+  width: 50vw;
+  height: 75vh;
+  background-color: $bPink;
+  background-image: url("../../images/about-nia-desktop.png");
+  background-repeat: no-repeat;
+  background-position-x: 310px;
+  background-position-y: 40px;
+  background-size: 32vw;
+  overflow: hidden;
+}
+
+.image {
+  width: 32vw;
+  transform: translate(50px, 120px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+}
