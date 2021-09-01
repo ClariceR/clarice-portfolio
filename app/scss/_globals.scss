@@ -43,9 +43,14 @@ a:hover {
   margin-top: 1rem;
 }
 
+span:hover {
+  background-color: $bYellow;
+}
+
 .title {
   font-family: 'Roboto Slab', monospace;
   font-weight: normal;
+  color: $darkBPurple;
 }
 
 .body__copy {
@@ -53,6 +58,12 @@ a:hover {
   color: $bCopyGray;
   line-height: 1.5;
   font-weight: 300;
+}
+
+.subtitle {
+  color: $darkBPurple;
+  font-family: "Roboto Mono", sans-serif;
+  letter-spacing: 1px;
 }
 
 // Hide

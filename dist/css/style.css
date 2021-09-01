@@ -45,9 +45,14 @@ a:hover {
   margin-top: 1rem;
 }
 
+span:hover {
+  background-color: #FCDE5D;
+}
+
 .title {
   font-family: 'Roboto Slab', monospace;
   font-weight: normal;
+  color: #262335;
 }
 
 .body__copy {
@@ -55,6 +60,12 @@ a:hover {
   color: #8c8c8c;
   line-height: 1.5;
   font-weight: 300;
+}
+
+.subtitle {
+  color: #262335;
+  font-family: "Roboto Mono", sans-serif;
+  letter-spacing: 1px;
 }
 
 .hide {
@@ -256,22 +267,64 @@ a:hover {
   height: 75vh;
 }
 
-.image-wrapper {
+.overlay-wrapper {
+  position: absolute;
+}
+
+.overlay {
+  opacity: 0;
+  position: relative;
   width: 50vw;
   height: 75vh;
   background-color: #F97EFA;
+  -webkit-transform: translateY(-75vh);
+          transform: translateY(-75vh);
+}
+
+.overlay:hover {
+  opacity: 86%;
+}
+
+.image-wrapper {
+  width: 50vw;
+  height: 75vh;
   background-image: url("../../images/about-nia-desktop.png");
   background-repeat: no-repeat;
   background-position-x: 310px;
   background-position-y: 40px;
   background-size: 32vw;
   overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+  opacity: 100;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.details-wrapper {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.top-right {
+  background-color: #F97EFA;
+}
+
+.bottom-left {
+  background-color: #70EBB4;
+}
+
+.bottom-right {
+  background-color: #F88B5D;
 }
 
 .image {
   width: 32vw;
-  -webkit-transform: translate(50px, 120px);
-          transform: translate(50px, 120px);
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
